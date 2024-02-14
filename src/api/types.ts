@@ -1,8 +1,8 @@
 export type MockApiResponse = {
-  data: ApiDataType[];
+  data: AssetType[];
 }
 
-export type ApiDataType = {
+export type AssetType = {
   name: string;
   value: number;
   trading: TradingType;

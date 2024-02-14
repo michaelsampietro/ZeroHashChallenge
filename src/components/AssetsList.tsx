@@ -1,16 +1,25 @@
-import React from 'react'
-import { Card, Row } from "antd"
+import React from "react";
+import { Card, Row } from "antd";
+import { AssetType } from "api/types";
 
-const AssetsList = () => {
+type AssetsListProps = {
+  assets: AssetType[];
+};
+
+const AssetsList = ({ assets }: AssetsListProps) => {
   return (
-    <Row>
-      <Card>
-        <p>Name: </p>
-        <p>Value: </p>
-        <p>Side: </p>
-      </Card>
-    </Row>
-  )
-}
+    <>
+      {assets.map((asset) => (
+        <Row>
+          <Card>
+            <p>Name: {asset.name} </p>
+            <p>Value: {asset.value} </p>
+            <p>Side: {asset.trading.side} </p>
+          </Card>
+        </Row>
+      ))}
+    </>
+  );
+};
 
-export default AssetsList
+export default AssetsList;
