@@ -1,6 +1,5 @@
-import apiData from './api-data.json'
-import { MockApiResponse } from './types'
+import apiData from "./api-data.json";
 
 // Feel free to type this function
-export const mockApi = (): Promise<MockApiResponse> =>
-  new Promise((r) => setTimeout(() => r(apiData as MockApiResponse), 800))
+export const mockApi = <T>(): Promise<T> =>
+  new Promise((r) => setTimeout(() => r(apiData as T), 800));
