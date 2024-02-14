@@ -1,6 +1,7 @@
 import React from "react";
-import { Card, Row } from "antd";
+import { Card, Row, Col } from "antd";
 import { AssetType } from "api/types";
+import { formatValue, mapTradingSideName } from "utils/formatters";
 
 type AssetsListProps = {
   assets: AssetType[];
@@ -8,17 +9,24 @@ type AssetsListProps = {
 
 const AssetsList = ({ assets }: AssetsListProps) => {
   return (
-    <>
+    <Row gutter={[16, 16]}>
       {assets.map((asset) => (
-        <Row>
-          <Card>
+        <Col
+          key={asset.name}
+          xs={12}
+          md={8}
+          
+        >
+          <Card style={{
+            backgroundColor: "#eee",
+          }}>
             <p>Name: {asset.name} </p>
-            <p>Value: {asset.value} </p>
-            <p>Side: {asset.trading.side} </p>
+            <p>Value: {formatValue(asset.value)} </p>
+            <p>Side: {mapTradingSideName(asset.trading.side)} </p>
           </Card>
-        </Row>
+        </Col>
       ))}
-    </>
+    </Row>
   );
 };
 
