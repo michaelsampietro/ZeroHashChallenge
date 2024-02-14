@@ -1,0 +1,68 @@
+{
+  "data": [
+    {
+      "name": "Bitcoin",
+      "value": 50000,
+      "trading": {
+        "side": "BUY_SIDE",
+        "enabled": true
+      }
+    },
+    {
+      "name": "Bitcoin cash",
+      "value": 4000.5012,
+      "trading": {
+        "side": "SELL_SIDE",
+        "enabled": true
+      }
+    },
+    {
+      "name": "Litecoin",
+      "value": 1000,
+      "trading": {
+        "side": "SELL_SIDE",
+        "enabled": true
+      }
+    },
+    {
+      "name": "Ethereum",
+      "value": 5.5,
+      "trading": {
+        "side": "BUY_SIDE",
+        "enabled": false
+      }
+    },
+    {
+      "name": "Ripple",
+      "value": 3.356,
+      "trading": {
+        "side": "BUY_SIDE",
+        "enabled": false
+      }
+    },
+    {
+      "name": "Avalanche",
+      "value": 4000.5012,
+      "trading": {
+        "side": "SELL_SIDE",
+        "enabled": true
+      }
+    },
+    {
+      "name": "Dogecoin",
+      "value": 1000.1234,
+      "trading": {
+        "side": "BUY_SIDE",
+        "enabled": true
+      }
+    },
+    {
+      "name": "Monero",
+      "value": 5.5523,
+      "trading": {
+        "side": "BUY_SIDE",
+        "enabled": true
+      }
+    }
+  ]
+}
