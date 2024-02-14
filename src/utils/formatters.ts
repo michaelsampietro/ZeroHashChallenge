@@ -1,4 +1,4 @@
-import { TradingSideEnum } from "api/types";
+import { TradingSideEnum } from "../api/types";
 
 export const mapTradingSideName = (sideName: TradingSideEnum) => {
   switch (sideName) {

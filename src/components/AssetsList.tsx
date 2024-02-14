@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, Row, Col } from "antd";
-import { AssetType } from "api/types";
-import { formatValue, mapTradingSideName } from "utils/formatters";
+import { AssetType } from "../api/types";
+import { formatValue, mapTradingSideName } from "../utils/formatters";
 
 type AssetsListProps = {
   assets: AssetType[];
